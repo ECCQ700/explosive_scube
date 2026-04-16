@@ -1,0 +1,74 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tnt",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_on_fire": false
+                },
+                "equipment": {
+                  "body": {
+                    "items": "minecraft:tnt"
+                  }
+                }
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "esc.exploding_tnt": true
+              },
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tnt",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_on_fire": true
+                },
+                "equipment": {
+                  "body": {
+                    "items": "minecraft:tnt"
+                  }
+                }
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {
+                "esc.exploding_tnt_fire": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": []
+}

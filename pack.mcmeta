@@ -1,0 +1,8 @@
+{
+    "pack": {
+        "description": "硫黄怪+TNT=???",
+        "pack_format": 101,
+        "min_format": 100,
+        "max_format": 102
+    }
+}

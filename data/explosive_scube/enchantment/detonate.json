@@ -1,0 +1,78 @@
+{
+  "description": "lol",
+  "supported_items": "minecraft:tnt",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "saddle"
+  ],
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "condition": "minecraft:enchantment_active_check",
+          "active": false
+        },
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:explode",
+              "damage_type": "minecraft:explosion",
+              "radius": 4,
+              "create_fire": false,
+              "block_interaction": "tnt",
+              "small_particle": {
+                "type": "minecraft:explosion"
+              },
+              "large_particle": {
+                "type": "minecraft:explosion_emitter"
+              },
+              "block_particles": [
+                {
+                  "weight": 4,
+                  "particle": {
+                    "type": "minecraft:poof"
+                  },
+                  "scaling": 1,
+                  "speed": 0.5
+                },
+                {
+                  "weight": 1,
+                  "particle": {
+                    "type": "minecraft:large_smoke"
+                  },
+                  "scaling": 1,
+                  "speed": 1.5
+                },
+                {
+                  "weight": 1,
+                  "particle": {
+                    "type": "minecraft:sulfur_cube_goo"
+                  },
+                  "scaling": 1,
+                  "speed": 2
+                }
+              ],
+              "sound": "minecraft:entity.generic.explode"
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "explosive_scube:remove_item"
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:prevent_equipment_drop": {}
+  }
+}

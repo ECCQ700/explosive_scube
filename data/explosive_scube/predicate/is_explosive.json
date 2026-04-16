@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:sulfur_cube",
+    "equipment": {
+      "body": {
+        "items": "minecraft:tnt"
+      }
+    }
+  }
+}
