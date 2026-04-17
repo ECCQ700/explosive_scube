@@ -1,4 +1,4 @@
-[English](https://github.com/ECCQ700/explosive_scube/blob/main/README_en_us.md) | 中文
+[English](README_en_us.md) | 中文
 
 # 爆爆硫方怪
 喂给硫方怪TNT，让它弹跳爆炸吧
@@ -11,3 +11,6 @@
 - 在载具中拥有不同的撞击触发阈值，更有趣（？）
 - 兼顾性能（大概吧）
   - 对象达到一定的速度才会计算跟踪其运动状态
+
+## TODO
+- 增加配置界面（大概率会鸽）

@@ -1,4 +1,4 @@
-English | [中文](https://github.com/ECCQ700/explosive_scube/blob/main/README.md)
+English | [中文](README.md)
 
 # Explosive Sufur Cube
 Pretty self-explanatory. Feed the sufur cube with TNT, let it crash & explode.
@@ -11,3 +11,6 @@ Pretty self-explanatory. Feed the sufur cube with TNT, let it crash & explode.
 - Cubes have different impact thresholds when mounted, making it fun to use.
 - Somewhat care for performance
   - Only those beyond certain speed will be included into motion calculation
+
+## TODO
+- Add adjustable config (Soon^TM^)
