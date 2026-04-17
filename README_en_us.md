@@ -1,4 +1,4 @@
-English | 中文
+English | [中文](https://github.com/ECCQ700/explosive_scube/blob/main/README.md)
 
 # Explosive Sufur Cube
 Pretty self-explanatory. Feed the sufur cube with TNT, let it crash & explode.
