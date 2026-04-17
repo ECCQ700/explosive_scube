@@ -1,4 +1,4 @@
-[English](https://github.com/ECCQ700/explosive_scube/blob/main/README.md) | 中文
+[English](https://github.com/ECCQ700/explosive_scube/blob/main/README_en_us.md) | 中文
 
 # 爆爆硫方怪
 喂给硫方怪TNT，让它弹跳爆炸吧
