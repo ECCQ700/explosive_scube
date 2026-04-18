@@ -5,7 +5,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:sulfur_cube",
+        "entity_type": "minecraft:sulfur_cube",
         "movement": {
           "speed": {
             "min": 10
@@ -17,7 +17,7 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "type": "minecraft:sulfur_cube",
+        "entity_type": "minecraft:sulfur_cube",
         "vehicle": {
           "movement": {
             "speed": {

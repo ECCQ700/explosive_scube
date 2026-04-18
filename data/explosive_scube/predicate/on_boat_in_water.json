@@ -2,9 +2,9 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "type": "minecraft:sulfur_cube",
+    "entity_type": "minecraft:sulfur_cube",
     "vehicle": {
-      "type": "#minecraft:boat",
+      "entity_type": "#minecraft:boat",
       "flags": {
         "is_in_water": true
       }
