@@ -4,7 +4,10 @@
   "predicate": {
     "entity_type": "minecraft:sulfur_cube",
     "vehicle": {
-      "entity_type": "#minecraft:boat"
+      "entity_type": "#minecraft:boat",
+      "flags": {
+        "is_in_water": false
+      }
     }
   }
 }

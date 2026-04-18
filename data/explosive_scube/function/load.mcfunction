@@ -1,6 +1,8 @@
 scoreboard objectives add Motion_Data_Display dummy
 scoreboard objectives add esc.activate_timer dummy
 scoreboard objectives add esc.critical_acc dummy
+scoreboard objectives add esc.mount_cooldown dummy
+scoreboard objectives add esc.boat_passenger_count dummy
 
 scoreboard players set #GLOBAL_CRITICAL_ACC esc.critical_acc 1500000
 scoreboard players set #GLOBAL_MINECART_CRITICAL_ACC esc.critical_acc 650000
