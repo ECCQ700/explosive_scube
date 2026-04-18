@@ -35,4 +35,5 @@ tellraw @p "---------------"
 tellraw @p ["爆爆硫方怪 V1.0\n项目地址：",\
 {text:"Github",color:"blue",underlined:1b,click_event:{action:"open_url",url:"https://github.com/ECCQ700/explosive_scube"}}]
 tellraw @p "作者：Eric700"
+tellraw @p "*初次加载/更新后需重载存档*"
 tellraw @p "---------------"

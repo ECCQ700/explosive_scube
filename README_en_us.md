@@ -2,6 +2,7 @@ English | [中文](README.md)
 
 # Explosive Sulfur Cube
 Pretty self-explanatory. Feed the sulfur cube with TNT, let it crash & explode.
+*Need to restart world upon first load or update.
 
 - Sulfur cube with TNT
 - Will explode if impact hard enough or upon death.
