@@ -2,15 +2,15 @@
 function explosive_scube:mount_boat/update_state
 
 # Reset activate timer if the cube is just mounted or below certain velocity.
-execute if entity @s[tag=!esc.mounted, predicate=explosive_scube:on_vehicle] run function explosive_scube:reset_activate_timer
+execute if entity @s[tag=!esc.mounted, predicate=explosive_scube:on_vehicle] run function explosive_scube:motion/reset_activate_timer
 tag @s[tag=esc.mounted, predicate=!explosive_scube:on_vehicle] remove esc.mounted
-execute if entity @s[predicate=!explosive_scube:motion_activate] run function explosive_scube:reset_activate_timer
+execute if entity @s[predicate=!explosive_scube:motion_activate] run function explosive_scube:motion/reset_activate_timer
 
 tag @s[scores={esc.activate_timer=0}] add esc.activated
-execute if entity @s[scores={esc.activate_timer=0}] run function explosive_scube:calc_motion
-execute if entity @s[scores={esc.activate_timer=1..}, predicate=explosive_scube:motion_activate] run function explosive_scube:activate_countdown
+execute if entity @s[scores={esc.activate_timer=0}] run function explosive_scube:motion/calc_motion
+execute if entity @s[scores={esc.activate_timer=1..}, predicate=explosive_scube:motion_activate] run function explosive_scube:motion/activate_countdown
 
-execute if entity @s[tag=esc.activated, predicate=!explosive_scube:motion_activate] run function explosive_scube:deactivate
+execute if entity @s[tag=esc.activated, predicate=!explosive_scube:motion_activate] run function explosive_scube:motion/deactivate
 # TODO: fix motion_activate predicate for vehicles beside minecart.
 
 
