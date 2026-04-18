@@ -1,5 +1,5 @@
-execute unless predicate explosive_scube:on_vehicle run function explosive_scube:get_pos
-execute if predicate explosive_scube:on_vehicle run function explosive_scube:get_pos_vehicle
+execute unless predicate explosive_scube:on_vehicle run function explosive_scube:motion/get_pos
+execute if predicate explosive_scube:on_vehicle run function explosive_scube:motion/get_pos_vehicle
 
 scoreboard players operation @s esc.v_x = @s esc.pos_x
 scoreboard players operation @s esc.v_x -= @s esc.pos_x_last
