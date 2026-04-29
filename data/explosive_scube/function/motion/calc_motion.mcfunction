@@ -1,5 +1,9 @@
-execute unless predicate explosive_scube:on_vehicle run function explosive_scube:motion/get_pos
-execute if predicate explosive_scube:on_vehicle run function explosive_scube:motion/get_pos_vehicle
+execute unless predicate explosive_scube:on_vehicle run data modify storage esc:tmp Pos set from entity @s Pos
+execute if predicate explosive_scube:on_vehicle on vehicle run data modify storage esc:tmp Pos set from entity @s Pos
+
+execute store result score @s esc.pos_x run data get storage esc:tmp Pos[0] 1000
+execute store result score @s esc.pos_y run data get storage esc:tmp Pos[1] 1000
+execute store result score @s esc.pos_z run data get storage esc:tmp Pos[2] 1000
 
 scoreboard players operation @s esc.v_x = @s esc.pos_x
 scoreboard players operation @s esc.v_x -= @s esc.pos_x_last
